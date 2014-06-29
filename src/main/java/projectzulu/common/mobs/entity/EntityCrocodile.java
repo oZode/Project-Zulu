@@ -26,7 +26,7 @@ public class EntityCrocodile extends EntityGenericAnimal {
         super(par1World);
         setSize(1.7f, 0.9f);
 
-        getNavigator().setAvoidsWater(true);
+        getNavigator().setAvoidsWater(false);
         tasks.addTask(0, new EntityAISmoothSwimming(this, true));
         tasks.addTask(1, new EntityAIPanic(this, 1.25f));
 
